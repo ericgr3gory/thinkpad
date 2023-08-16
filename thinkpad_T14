@@ -5,8 +5,7 @@
 #sudo vim /etc/modprobe.d/inteldsp.conf
 #options snd_intel_dspcfg dsp_driver=1
 
-#sudo apt install gcc xorg git xserver-xorg make vim screen progress python3 python3-pip alsa-utils pavucontrol pcmanfm suckless-tools lightdm terminator wget curl network-manager network-manager-gnome xinput brightnessctl vlc 
-
+#sudo apt install gcc xorg git xserver-xorg make vim screen progress python3 python3-pip alsa-utils pavucontrol pcmanfm suckless-tools lightdm terminator wget curl network-manager network-manager-gnome xinput brightnessctl vlc ffmpeg i3lock xss-lock unzip zsh neofetch
 #fix tuchpad tap
 #xinput list
 #xinput list-props [device number]
@@ -43,14 +42,15 @@
 # pip install .
 
 # Xsessions Desktop file
+# sudo vim  /usr/share/xsessions/qtile.desktop
+# add below to file
+#[Desktop Entry]
+#Name=Qtile
+#Comment=Qtile Session
+#Type=Application
+#Keywords=wm;tiling
+#Exec=/home/username/.local/bin/qtile start
 
-[Desktop Entry]
-Name=Qtile
-Comment=Qtile Session
-Type=Application
-Keywords=wm;tiling
-EOF
 
-sudo vim /usr/share/xsessions/qtile.desktop
 sudo echo "Exec=/home/$USER/.local/bin/qtile start" | sudo tee -a /usr/share/xsessions/qtile.desktop
 
