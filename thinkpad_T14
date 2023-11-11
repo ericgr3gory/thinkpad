@@ -5,7 +5,7 @@
 #sudo vim /etc/modprobe.d/inteldsp.conf
 #options snd_intel_dspcfg dsp_driver=1
 
-#sudo apt install gcc xorg git xserver-xorg make vim screen progress python3 python3-pip alsa-utils pavucontrol pcmanfm suckless-tools lightdm terminator wget curl network-manager network-manager-gnome xinput brightnessctl vlc ffmpeg i3lock xss-lock unzip zsh neofetch tmux
+#sudo apt install gcc libxkbcommon-x11-dev xorg git xserver-xorg make vim screen progress python3 python3-pip alsa-utils pavucontrol pcmanfm suckless-tools lightdm terminator wget curl network-manager network-manager-gnome xinput brightnessctl vlc ffmpeg i3lock xss-lock unzip zsh neofetch tmux
 #fix tuchpad tap
 #xinput list
 #xinput list-props [device number]
