@@ -49,8 +49,6 @@
 #Comment=Qtile Session
 #Type=Application
 #Keywords=wm;tiling
-#Exec=/home/username/.local/bin/qtile start
-
 
 sudo echo "Exec=/home/$USER/.local/bin/qtile start" | sudo tee -a /usr/share/xsessions/qtile.desktop
 
